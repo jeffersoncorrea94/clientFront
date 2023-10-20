@@ -1,0 +1,30 @@
+/* Estilo para el header fijo */
+.fixed-header {
+position: fixed;
+  top: 0; /* Lo fija en la parte superior */
+  left: 0;
+  right: 0; /* Para que abarque todo el ancho de la pantalla */
+  background-color: #333; /* Color de fondo opcional */
+  color: #fff; /* Color del texto opcional */
+  text-align: center; /* Alineación opcional */
+  z-index: 1000;
+  }
+  
+  /* Estilo para el contenedor fijo */
+  .fixed-container {
+    
+  }
+  
+  /* Estilo para el footer fijo */
+  .fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0px 0; /* Espaciado opcional */
+    z-index: 1000;
+  }
+  

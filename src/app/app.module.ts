@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { IngresoInformacionComponent } from './ingreso-informacion/ingreso-informacion.component';
 import { ResumenComponent } from './resumen/resumen.component';
 
+
 const appRoutes: Routes = [
   { path: 'ingreso', component: IngresoInformacionComponent },
   { path: 'resumen', component: ResumenComponent },
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
     AppComponent,
     IngresoInformacionComponent,
     ResumenComponent,
+
   ],
   imports: [
     BrowserModule,
