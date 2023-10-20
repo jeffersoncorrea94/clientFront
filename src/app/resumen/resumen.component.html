@@ -1,14 +1,43 @@
-<div>
-    <h2>Información básica</h2>
-    <p>primerNombre: {{ clienteData.primerNombre }}</p>
-    <p>segundoNombre: {{ clienteData.segundoNombre }}</p>
-    <p>primerApellido: {{ clienteData.primerApellido }}</p>
-    <p>segundoApellido: {{ clienteData.segundoApellido }}</p>
-    <p>telefono: {{ clienteData.telefono }}</p>
-    <p>direccion: {{ clienteData.direccion }}</p>
-    <p>Ciudad De Residencia: {{ clienteData.ciudadResidencia }}</p>
-
-    <button class="btn btn-primary" (click)="volver()">Volver</button>
+<div class="container">
+    <div class="content row">
+        <div class="col-md-6 div-content">
+            <form>
+                <div class="form-group">
+                    <h3>Información básica</h3>
+                </div>
+                <div class="form-group">
+                    <label for="dato">Primer Nombre</label>
+                    <input type="text" class="form-control" id="primerNombre" name="primerNombre" value="{{clienteData.primerNombre}}" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="dato">Segundo Nombre</label>
+                    <input type="text" class="form-control" id="segundoNombre" name="segundoNombre" value="{{ clienteData.segundoNombre}}" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="dato">primerApellido</label>
+                    <input type="text" class="form-control" id="primerApellido" name="primerApellido" value="{{ clienteData.primerApellido}}" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="dato">segundoApellido</label>
+                    <input type="text" class="form-control" id="segundoApellido" name="segundoApellido" value="{{ clienteData.segundoApellido}}" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="dato">Teléfono</label>
+                    <input type="text" class="form-control" id="telefono" name="telefono" value="{{ clienteData.telefono}}" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="dato">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" name="direccion" value="{{ clienteData.direccion}}" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="dato">Ciudad De Residencia</label>
+                    <input type="text" class="form-control" id="ciudad" name="ciudad" value="{{ clienteData.ciudadResidencia}}" readonly>
+                </div>
+                <div class="form-group button">
+                    <button class="btn btn-primary" (click)="volver()">Volver</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
-  
   
